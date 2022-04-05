@@ -6,7 +6,7 @@
 }
 
 .dark-mode {
-  --color-light: #1d1d1d;
+  --color-light: #06151f;
   --color-lighter: #133144;
   --color-dark: #f7f8f9;
   --color-accent: #4484fb;
@@ -275,19 +275,26 @@ nav li:hover::after {
 .email-btn em {
   font-size: 1.5rem;
   color: var(--color-dark);
+  cursor: default;
 }
 
-#contact .email-btn span {
+#contact span {
   font-size: 1.1rem;
-  margin-left: 0.25rem;
+  margin-left: 0.75rem;
   background-color: var(--color-light);
   color: var(--color-dark);
   border-radius: 0.75rem;
   padding: 0.2rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-#contact .email-btn span:hover {
+
+#contact span:hover {
   transform: scale(1.1);
+}
+
+.dark-mode #contact span {
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }
 
 /* main */
@@ -304,12 +311,13 @@ nav li:hover::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #252525;
+  background-color: #061824;
   color: var(--color-light);
 }
 
 .dark-mode #about {
   color: var(--color-dark);
+  background-color: #091f2e;
 }
 #about p,
 #conclusion p,
@@ -627,7 +635,7 @@ h3.goUp {
   position: sticky;
   top: 65vh;
   left: 1vw;
-  z-index: 0;
+  z-index: 11;
   margin-left: 0.5rem;
   align-items: flex-start;
   width: fit-content;
@@ -640,7 +648,11 @@ h3.goUp {
 }
 
 .icons button {
-  color: #1d4258;
+  color: #3a5d74;
+}
+
+.dark-mode .icons button {
+  color: var(--color-dark);
 }
 
 .email-btn:hover i {
@@ -691,15 +703,18 @@ h3.goUp {
 
 footer {
   background-color: var(--color-light);
-  padding: 3vh 10vw;
+  padding: 1.5vh 10vw;
   position: relative;
   z-index: 99;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);
 }
 
 footer p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: end;
+  font-size: 0.75rem;
 }
 
 /* mobile */
