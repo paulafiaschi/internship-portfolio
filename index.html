@@ -66,10 +66,14 @@
 
 
   <ul class="icons">
-    <li><a href="https://www.linkedin.com/in/paulafiaschi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    <li><a href="https://www.linkedin.com/in/paulafiaschi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
+      </a>
     </li>
     <li><a href="https://github.com/paulafiaschi" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-    <li><a href="mailto:pau.fiaschi@gmail.com"><i id="email" class="fa-solid fa-envelope"></i></a>
+    <li>
+      <button class="email-btn" data-clipboard-text="pau.fiaschi@gmail.com">
+        <i id="email" class="fa-solid fa-envelope"></i><span>Click to copy</span></button>
+
 
     </li>
 
@@ -142,9 +146,14 @@
 
   <section id="contact" class="highlight">
     <h3>Have any questions or just want to say hi?</h3>
-    <p> You can get in touch through <a href="https://www.linkedin.com/in/paulafiaschi/" target="_blank">LinkedIn</a>
+    <p>
+      Get in touch via <a href="https://www.linkedin.com/in/paulafiaschi/" target="_blank">LinkedIn</a>
       or
-      by sending an email to <span> <a href="mailto:pau.fiaschi@gmail.com">pau.fiaschi@gmail.com</a></span></p>
+      shoot an email to <button class="email-btn"><em>pau.fiaschi@gmail.com</em> <span
+          class="material-icons-outlined copy">
+          content_copy
+        </span></button></p>
+
     <br>
     <p>Thanks for taking the time to reach out! </p>
 
@@ -159,7 +168,7 @@
       Copenhagen's School of Design and Technology</p>
   </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
   <script type="module" src="/main.js"></script>
 </body>
 
