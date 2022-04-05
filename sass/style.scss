@@ -331,7 +331,7 @@ nav li:hover::after {
   color: var(--color-dark);
   background-color: #091f2e;
 }
-#about p,
+
 #conclusion p,
 .highlight p {
   font-size: 1.95rem;
@@ -371,6 +371,14 @@ nav li:hover::after {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
 }
 
 // projects section
