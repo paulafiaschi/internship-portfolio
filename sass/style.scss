@@ -3,6 +3,7 @@
   --color-lighter: #d1d7dd;
   --color-dark: #133144;
   --color-accent: #4484fb;
+  accent-color: #4484fb;
 }
 
 .dark-mode {
@@ -64,6 +65,14 @@ h4 {
 }
 h1 {
   font-size: 5.96rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 /* burger menu settings */
@@ -310,7 +319,7 @@ nav li:hover::after {
 
 /* about */
 #about {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -331,6 +340,40 @@ nav li:hover::after {
   margin-right: auto;
 }
 
+.bioControls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about ul {
+  justify-content: space-between;
+  min-width: 20vw;
+}
+
+.bioLength li {
+  cursor: pointer;
+  border: solid 1.5px var(--color-accent);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+.accentBg {
+  background-color: var(--color-accent);
+}
+
+.description {
+  min-height: 30vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+// projects section
 #projects {
   padding-top: 5vw;
   padding-bottom: 5vw;

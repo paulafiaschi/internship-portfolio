@@ -64,6 +64,12 @@ window.addEventListener("DOMContentLoaded", load);
 function load() {
   console.log("start");
   hamburger.addEventListener("click", toggleMenu);
+  document.querySelector(".copy").addEventListener("click", changeIcon);
+  document.querySelector(".email-btn").addEventListener("click", changeIcon2);
+  document.querySelector("#xs").addEventListener("click", showXSBio);
+  document.querySelector("#s").addEventListener("click", showSBio);
+  document.querySelector("#m").addEventListener("click", showMBio);
+  document.querySelector("#l").addEventListener("click", showLBio);
 }
 
 function toggleMenu() {
@@ -81,9 +87,6 @@ function toggleMenu() {
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
-
-document.querySelector(".copy").addEventListener("click", changeIcon);
-document.querySelector(".email-btn").addEventListener("click", changeIcon2);
 
 function changeIcon() {
   console.log("email copied");
@@ -109,4 +112,53 @@ function changeIcon2() {
     document.querySelector("#email").style.color = "var(--color-dark)";
     document.querySelector("#email").style.backgroundColor = "var(--color-light)";
   }, 700);
+}
+
+function showXSBio() {
+  document.querySelector("#s").classList.remove("accentBg");
+  document.querySelector("#m").classList.remove("accentBg");
+  document.querySelector("#l").classList.remove("accentBg");
+
+  console.log("xs chosen");
+  document.querySelector("#xs").classList.add("accentBg");
+  document.querySelector("#bioXS").classList.remove("hidden");
+  document.querySelector("#bioS").classList.add("hidden");
+  document.querySelector("#bioM").classList.add("hidden");
+  document.querySelector("#bioL").classList.add("hidden");
+}
+function showSBio() {
+  document.querySelector("#xs").classList.remove("accentBg");
+  document.querySelector("#m").classList.remove("accentBg");
+  document.querySelector("#l").classList.remove("accentBg");
+
+  console.log("s chosen");
+  document.querySelector("#s").classList.add("accentBg");
+  document.querySelector("#bioS").classList.remove("hidden");
+  document.querySelector("#bioXS").classList.add("hidden");
+  document.querySelector("#bioM").classList.add("hidden");
+  document.querySelector("#bioL").classList.add("hidden");
+}
+function showMBio() {
+  document.querySelector("#xs").classList.remove("accentBg");
+  document.querySelector("#s").classList.remove("accentBg");
+  document.querySelector("#l").classList.remove("accentBg");
+
+  console.log("m chosen");
+  document.querySelector("#m").classList.add("accentBg");
+  document.querySelector("#bioM").classList.remove("hidden");
+  document.querySelector("#bioXS").classList.add("hidden");
+  document.querySelector("#bioS").classList.add("hidden");
+  document.querySelector("#bioL").classList.add("hidden");
+}
+function showLBio() {
+  document.querySelector("#xs").classList.remove("accentBg");
+  document.querySelector("#s").classList.remove("accentBg");
+  document.querySelector("#m").classList.remove("accentBg");
+
+  console.log("l chosen");
+  document.querySelector("#l").classList.add("accentBg");
+  document.querySelector("#bioL").classList.remove("hidden");
+  document.querySelector("#bioXS").classList.add("hidden");
+  document.querySelector("#bioS").classList.add("hidden");
+  document.querySelector("#bioM").classList.add("hidden");
 }
