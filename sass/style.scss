@@ -471,6 +471,10 @@ nav li:hover::after {
   gap: 3vw;
 }
 
+.two-col div {
+  margin-top: 2rem;
+}
+
 .prev-proj {
   position: fixed;
   z-index: 1;
@@ -556,6 +560,7 @@ nav li:hover::after {
 }
 
 .dark-mode .black-bg {
+  background-color: #1d4258;
   color: var(--color-dark);
 }
 
@@ -574,6 +579,12 @@ section img {
 
 .buttons-section {
   padding-top: 0vw !important;
+}
+
+.buttons-section a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .darkCard {

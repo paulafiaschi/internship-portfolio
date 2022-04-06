@@ -64,8 +64,8 @@ window.addEventListener("DOMContentLoaded", load);
 function load() {
   console.log("start");
   hamburger.addEventListener("click", toggleMenu);
-  document.querySelector(".copy").addEventListener("click", changeIcon);
   document.querySelector(".email-btn").addEventListener("click", changeIcon2);
+  document.querySelector(".copy").addEventListener("click", changeIcon);
   document.querySelector("#xs").addEventListener("click", showXSBio);
   document.querySelector("#s").addEventListener("click", showSBio);
   document.querySelector("#m").addEventListener("click", showMBio);
@@ -88,18 +88,6 @@ menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
 
-function changeIcon() {
-  console.log("email copied");
-  document.querySelector(".copy").innerHTML = "check";
-  document.querySelector(".copy").style.backgroundColor = "rgb(71, 175, 71)";
-  document.querySelector(".copy").style.color = "white";
-  setTimeout(() => {
-    document.querySelector(".copy").innerHTML = "content_copy";
-    document.querySelector(".copy").style.color = "#133144";
-    document.querySelector(".copy").style.backgroundColor = "#f7f8f9";
-  }, 700);
-}
-
 function changeIcon2() {
   console.log("email copied");
   document.querySelector("#email").classList.remove("fa-envelope");
@@ -113,6 +101,18 @@ function changeIcon2() {
     document.querySelector("#email").style.color = "var(--color-dark)";
     document.querySelector("#email").style.backgroundColor = "var(--color-light)";
     document.querySelector(".email-btn span").innerHTML = "Click to copy";
+  }, 700);
+}
+
+function changeIcon() {
+  console.log("email copied");
+  document.querySelector(".copy").innerHTML = "check";
+  document.querySelector(".copy").style.backgroundColor = "rgb(71, 175, 71)";
+  document.querySelector(".copy").style.color = "white";
+  setTimeout(() => {
+    document.querySelector(".copy").innerHTML = "content_copy";
+    document.querySelector(".copy").style.color = "#133144";
+    document.querySelector(".copy").style.backgroundColor = "#f7f8f9";
   }, 700);
 }
 

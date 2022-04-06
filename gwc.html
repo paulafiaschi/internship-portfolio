@@ -57,24 +57,25 @@
     <div class="hero">
       <div>
         <h1>Green Wardrobe Club</h1>
-        <h4>Focus on typeface pairing and UI card design</h4>
-        <p>The assignment was to create a mockup landing page design, choosing the right font pairing. There were two
-          parts;
-          first part was to implement a font hierarchy and the second part to design UI cards.</p>
-        <a href="https://paulafiaschi.github.io/12c.01.01-fonts-and-cards/" target="_blank"
-          class="sec-button mob-none">See
-          website</a>
+        <h4>Redesign of GWC's online presence.</h4>
+        <p>The exam assignment was to develop and communicate the start up's profile effectivelt by creating a strong,
+          professional online presence for it to bring value to the client and the client's potential customers.
+        </p>
+
       </div>
       <img src="img/fonts-mockup.webp" alt="Three piled up mockups of the project 'Fonts and UI Design'">
-      <a href="https://paulafiaschi.github.io/12c.01.01-fonts-and-cards/" target="_blank" class="sec-button d-none">See
+      <a href="https://paulafiaschi.github.io/gwcExam/" target="_blank" class="sec-button d-none">See
         website</a>
     </div>
   </main>
   <ul class="icons">
-    <li><i class="fa-brands fa-linkedin-in"><a href="https://www.linkedin.com/in/paulafiaschi/" target="_blank"></a></i>
+    <li><a href="https://www.linkedin.com/in/paulafiaschi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
+      </a>
     </li>
-    <li><i class="fa-brands fa-github"></i><a href="https://github.com/paulafiaschi" target="_blank"></a></li>
-    <li><a href="mailto:pau.fiaschi@gmail.com"><i id="email" class="fa-solid fa-envelope"></i></a>
+    <li><a href="https://github.com/paulafiaschi" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+    <li>
+      <button class="email-btn" data-clipboard-text="pau.fiaschi@gmail.com">
+        <i id="email" class="fa-solid fa-envelope"></i><span>Click to copy</span></button>
     </li>
   </ul>
 
@@ -82,72 +83,73 @@
   <a href="colors.html" class="next-proj">Next project &#62;</a>
 
   <section class="black-bg">
-    <h3>Font pairing and hierarchy</h3>
+    <h3>Redesign of the website</h3>
     <div class="two-col">
+      <p>The first step was to make sure the website had enough contrast and was easily navegable. After some testing,
+        we could that the user got lost and was confused about what the message was. Therefore, we changed the color
+        palette and redesigned the UI.</p>
       <p>Good typography not only makes the user read, but also feel. It allows the user to focus on the content and it
-        affects how it is understood and perceived. It sets the personality of the website and affects the user's
+        affects how the information is erceived. It sets the personality of the website and affects the user's
         overall
         experience.
       </p>
-      <p>I started choosing the body font because it is the most common element in any product. The looking feel of the
-        body text has the greates impact. Therefore, I chose a sans-serif font which gives a modern look and it is easy
-        to
-        read on screen.</p>
+
+      <div>
+        <img src="/img/gwc-hp-original.webp" alt="GWC original home page banner and first section">
+        <p>Original website lacking color contrast and CTA. Nav bar could use margin, so that all items are accessible.
+        </p>
+      </div>
+
+      <div>
+        <img src="/img/gwc-hp-changed.webp" alt="GWC new home page with video and more contrast">
+        <p>Redesigned website with a video showing different people wearing different outfits, two CTA and increased
+          contrast with the new color palette in place.</p>
+      </div>
     </div>
-
-    <img src="img/typeface1White@100.webp" alt="Font hierarchy and typefaces chosen">
-
-    <img src="img/fonts-landing.webp" alt="Screen shot of the landing page of the project">
   </section>
 
   <section>
-    <h3>UI Design Card</h3>
+    <h3>Connecting to a Database and making the website dynamic</h3>
     <div class="two-col">
-      <p>Cards were one of the main focus of this assignment and that it why their design was fundamental. They take
-        little space but show enough information so that the user can choose between two choices.</p>
-      <p> The design is simple,
-        yet visually pleasing, with a picture catching the user's atention. They keep the interface organized and they
-        tend to be minimalistic to keep the design clean. In this case, there were plenty of them and that is why I
-        chose
-        to stick to minimalism and just one of the accent colors.</p>
+      <p>We created filters on the top part, so that the user can easily access what they are searching for. On the
+        side, category filter which after doing research, found out that was the main expectation from the users.
+      </p>
+      <p> When clicking on the different categories, the list content changes accoordingly. We did this by fetching it
+        from the url and sending a response of item matching the category.
+        Since we didn't have access to the entire data base, we implemented fake products to test it out.
+      </p>
     </div>
 
-    <img src="img/card-expl.webp" alt="Card design explained" width="500px" class="lightCard">
-    <img src="img/card-expl-dm.webp" alt="Card design explained" width="500px" class="darkCard">
+    <img src="/img/gwc-filters.webp" alt="GWC product list showing the filters on the left">
+
   </section>
 
   <section class="buttons-section">
-    <h3>Buttons</h3>
-    <img src="img/buttons.webp" alt="Primary, secondary and terciary buttons">
+    <h3>Lenders and Borrowers</h3>
 
+    <p>We also created some custommed information to make it more clear for both types of end users (lenders and
+      borrowers). In this case we used JavaScript to create an event listener on click to show the relevant
+      information</p>
     <div class="two-col">
-      <p>To ensure that a wider audience can read small text (18px and under), it should have a colour contrast ratio of
-        at least 4.5:1. In this case, the secondary's and the terciary's buttons have a slightly different value in
-        order
-        to achieve that ratio, yet maintaining the same hue.</p>
-      <p>They all have different sttyle so that they don't break the visual hierarchy by conflicting. It is clear which
-        action is the most important.
-        When it comes to accessibility, it's important that we don't rely on colour alone to distinguish interface
-        elements. Those who are colourblind wouldn't be able to tell the difference between elements. </p>
+      <img src="/img/gwc-lenders.webp" alt="Steps on the GWC website for lenders">
+      <img src="/img/gwc-borrowers.webp" alt="Steps on the GWC website for borrowers">
     </div>
 
-  </section>
 
-  <section class="color-palette">
-    <h3>Color Palette</h3>
-    <p>The content was only lorem impsum, thus making it difficult to select colors that would match the
-      topic, and, following the 60-30-10 rule, this is the color scheme chosen for the website.</p>
-    <img src="img/fonts-palette.webp" alt="color palette following 60-30-10 rule" class="shadow">
+    <a href="https://paulafiaschi.github.io/gwcExam/" target="_blank" class="sec-button mob-none">See live
+      website</a>
+
+
   </section>
 
 
   <footer>
-    <p>This portfolio was made as part of the Theme "Design for Developers" of the <em>Front-end elective</em>. KEA,
-      Copenhagen's School of Design and Technology</p>
+    <p>&copy; 2022 - Paula Fiaschi</p>
+
   </footer>
 
-
-  <script type="module" src="/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>
