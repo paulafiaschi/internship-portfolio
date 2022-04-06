@@ -106,11 +106,13 @@ function changeIcon2() {
   document.querySelector("#email").classList.add("fa-check");
   document.querySelector("#email").style.backgroundColor = "rgb(71, 175, 71)";
   document.querySelector("#email").style.color = "white";
+  document.querySelector(".email-btn span").innerHTML = "Email copied";
   setTimeout(() => {
     document.querySelector("#email").classList.remove("fa-check");
     document.querySelector("#email").classList.add("fa-envelope");
     document.querySelector("#email").style.color = "var(--color-dark)";
     document.querySelector("#email").style.backgroundColor = "var(--color-light)";
+    document.querySelector(".email-btn span").innerHTML = "Click to copy";
   }, 700);
 }
 
