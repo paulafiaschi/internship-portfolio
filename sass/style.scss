@@ -63,8 +63,11 @@ h4 {
   font-size: 3.8rem;
   margin: 1rem 0;
 }
-h1 {
-  font-size: 5.96rem;
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 2rem;
 }
 
 .hidden {
@@ -553,7 +556,7 @@ nav li:hover::after {
   align-items: center;
   gap: 3vw;
   position: relative;
-  margin-top: 5vw;
+  padding-top: 3vh;
   margin-bottom: 5vw;
 }
 
@@ -562,7 +565,7 @@ nav li:hover::after {
 }
 
 .hero ul {
-  margin-top: 2rem;
+  margin-top: 3vh;
   font-weight: 100;
 }
 
