@@ -578,6 +578,10 @@ nav li:hover::after {
 .black-bg {
   background-color: #061824;
   color: var(--color-light);
+
+  video {
+    margin-top: 2rem;
+  }
 }
 
 .dark-mode .black-bg {
