@@ -942,6 +942,18 @@ footer p {
   .highlight {
     padding: 4vh 11vw;
   }
+
+  .badge {
+    max-height: 15vh;
+  }
+
+  .one-col {
+    max-width: 100%;
+  }
+
+  .d-none {
+    display: block;
+  }
   .footer {
     padding: 2vh 11vw;
   }
