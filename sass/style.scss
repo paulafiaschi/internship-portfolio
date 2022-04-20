@@ -478,6 +478,12 @@ nav li:hover::after {
   margin-top: 2rem;
 }
 
+.one-col {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
 .flex {
   display: flex;
   justify-content: flex-start;
@@ -795,19 +801,25 @@ p.goUp {
 }
 
 .badge {
-  max-width: 10vw;
+  max-height: 10vw;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   h5 {
     font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
+  }
+  div {
+    margin-top: 0;
+  }
+  p.codepen {
+    margin-top: 2rem;
   }
 }
 
