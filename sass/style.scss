@@ -475,6 +475,13 @@ nav li:hover::after {
   margin-top: 2rem;
 }
 
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
 .prev-proj {
   position: fixed;
   z-index: 1;
