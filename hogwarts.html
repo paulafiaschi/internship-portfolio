@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description"
-    content="Exam project for the second semester. Redesign of the website Green Wardrobe Club for the AP Degree of Multimedia Design at KEA, Copenhagen.">
+    content="School project that uses an API and handles a database  as part of the Front-end Design course, of the AP Degree of Multimedia Design at KEA, Copenhagen.">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paula Fiaschi - GWC</title>
+  <title>Paula Fiaschi - Hogwarts Database</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/8f94539773.js" crossorigin="anonymous"></script>
@@ -57,27 +57,28 @@
 
     <div class="hero">
       <div>
-        <h1>Green Wardrobe Club</h1>
-        <h4>Redesign of GWC's online presence.</h4>
-        <p>The exam assignment was to develop and communicate the start up's profile effectively by creating a strong,
-          professional online presence for it to bring value to the client and the client's potential customers.
+        <h1>Hogwarts Database</h1>
+        <h4>Build a system to handle the student list of Hogwarts College</h4>
+        <p>The project was to create an interface for the administrators of the school to handle student lists. Some of
+          the requirements were to be able to sort and filter. Also the interface must provide a "popup" window with
+          detailed information about each student, including photo and house-crest and colors.
         </p>
         <ul>
-          <li>Design</li>
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
+          <li>API</li>
         </ul>
 
         <div class="flex">
-          <a href="https://paulafiaschi.github.io/gwcExam/" target="_blank" class="sec-button mob-none"><i
+          <a href="https://paulafiaschi.github.io/hogwarts/" target="_blank" class="sec-button mob-none"><i
               class="fa-solid fa-globe"></i> Go to website</a>
-          <a href="https://github.com/paulafiaschi/gwcExam" target="_blank" class="sec-button mob-none"><i
+          <a href="https://github.com/paulafiaschi/hogwarts" target="_blank" class="sec-button mob-none"><i
               class="fa-brands fa-github"></i> Go to repository</a>
         </div>
 
       </div>
-      <img src="/img/gwc-mockup.webp" alt="Mockup for desktop and mobile for GWC's website">
+      <img src="/img/gwc-mockup.webp" alt="Three piled up mockups of the project 'Fonts and UI Design'">
       <a href="https://paulafiaschi.github.io/gwcExam/" target="_blank" class="sec-button d-none">See
         website</a>
     </div>
@@ -93,33 +94,35 @@
     </li>
   </ul>
 
-  <a href="responsive.html" class="prev-proj">&#60; Previous project</a>
-  <a href="colors.html" class="next-proj">Next project &#62;</a>
+  <a href="carbon.html" class="prev-proj">&#60; Previous project</a>
+  <a href="gwc.html" class="next-proj">Next project &#62;</a>
 
   <section class="black-bg">
-    <h3>Redesign of the website</h3>
+    <h3>Creating the interface</h3>
     <div class="two-col">
-      <p>The first step was to make sure the website had enough contrast and was easily navegable. After some testing,
-        we could that the user got lost and was confused about what the message was. Therefore, we changed the color
-        palette and redesigned the UI.</p>
-      <p>Good typography not only makes the user read, but also feel. It allows the user to focus on the content and it
-        affects how the information is erceived. It sets the personality of the website and affects the user's
-        overall
-        experience.
+      <p>The first step was to clean the data provided, spliting a full name into first name, alias and last name. The
+        list provided is intended for administrators to get a quick overview of the students in the current year, and
+        sort, filter, and search for certain properties.</p>
+      <p> The administrator is able to sort on First Name, Last Name and House, as well as by "Prefect state".
       </p>
 
-      <div>
-        <img src="/img/gwc-hp-original.webp" alt="GWC original home page banner and first section">
-        <p>Original website lacking color contrast and CTA. Nav bar could use margin, so that all items are accessible.
-        </p>
-      </div>
-
-      <div>
-        <img src="/img/gwc-hp-changed.webp" alt="GWC new home page with video and more contrast">
-        <p>Redesigned website with a video showing different people wearing different outfits, two CTA and increased
-          contrast with the new color palette in place.</p>
-      </div>
     </div>
+
+    <video controls width="100%">
+      <source src="/img/hogwarts-sorting(1).mp4" type="video/mp4">
+      <img src="/img/hogwarts-sorting.gif" alt="Sorting the list through different attributes">
+    </video>
+
+
+    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="rNpRBmK" data-preview="true"
+      data-user="paulafiaschi"
+      style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/paulafiaschi/pen/rNpRBmK">
+          Hogwarts List</a> by Paula (<a href="https://codepen.io/paulafiaschi">@paulafiaschi</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
   </section>
 
   <section>
