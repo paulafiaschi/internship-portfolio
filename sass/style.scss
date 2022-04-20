@@ -794,6 +794,23 @@ p.goUp {
   color: white !important;
 }
 
+.badge {
+  max-width: 10vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h5 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
 footer {
   background-color: var(--color-light);
   padding: 1.5vh 10vw;
