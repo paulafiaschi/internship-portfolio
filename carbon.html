@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description"
-    content="School project that uses an API and handles a database  as part of the Front-end Design course, of the AP Degree of Multimedia Design at KEA, Copenhagen.">
+    content="Project together with Advice A/S to create a carbon emission calcualtor for websites. ">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paula Fiaschi - Hogwarts Database</title>
+  <title>Paula Fiaschi - Carbon calculator</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/8f94539773.js" crossorigin="anonymous"></script>
@@ -53,16 +53,15 @@
   <main class="projectsMain">
     <ul class="bc">
       <li><a href="index.html#projects">Projects</a> &#62;</li>
-      <li>Hogwarts</li>
+      <li>CO2 web calculator</li>
     </ul>
 
     <div class="hero">
       <div>
-        <h1>Hogwarts Database</h1>
-        <h4>Build a system to handle the student list of Hogwarts College</h4>
-        <p>The project was to create an interface for the administrators of the school to handle student lists. Some of
-          the requirements were to be able to sort and filter. Also the interface must provide a "popup" window with
-          detailed information about each student, including photo and house-crest and colors.
+        <h1>CO<sub>2</sub> Calculator</h1>
+        <h4>Build a prototype for an online calculation tool for web CO2 emissions</h4>
+        <p>The project was to create a tool aimed at managers and other decision makers to help create awareness.
+          Together with an interactive interface for the user to be able to preview future improvements.
         </p>
         <ul>
           <li>HTML</li>
@@ -99,20 +98,19 @@
   <a href="gwc.html" class="next-proj">Next project &#62;</a>
 
   <section class="black-bg">
-    <h3>Creating the interface</h3>
-    <div class="one-col">
-      <p>The first step was to clean the data provided, spliting a full name into first name, alias and last name. The
-        list provided is intended for administrators to get a quick overview of the students in the current year, and
-        sort, filter, and search for certain properties.</p>
-      <p> The administrator is able to sort on First Name, Last Name and House, as well as by "Prefect state".
+    <h3>User Stories</h3>
+    <div class="uxStories">
+
+      <p class="ux">As I user I want to be able to <span>insert a URL</span> so I can test if my
+        website is considered green or not.
       </p>
+      <p class="ux">As I user I want to be able to <span>select my industry</span> so, potentially, I can make benchmark
+        with other
+        industries.</p>
+
 
     </div>
-
-    <video controls width="100%">
-      <source src="/img/hogwarts-sorting(1).mp4" type="video/mp4">
-      <img src="/img/hogwarts-sorting.gif" alt="Sorting the list through different attributes">
-    </video>
+    <img src="/img/co2-landing.png" alt="landing page of the co2 calculator">
 
 
     <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="rNpRBmK" data-preview="true"
@@ -124,50 +122,33 @@
     </p>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+
+    <div class="two-col">
+      <p>In this first step, the user enters a valid URL and selects the industry. As this was a demo, the data is not
+        stored in any database so the industries are not saved. Then the URL is fetched from the form and run through
+        two APIs, pageSpeed and Website Carbon </p>
+      <p>Because it takes a while, a loader is showed to the users to give feedback. After that, all the information
+        displayed on the website is chaged according to the results of both APIs.</p>
+    </div>
   </section>
 
   <section>
-    <h3>Prefects, blood-status and Inquisitorial Squad Algorithms</h3>
-    <div class="two-col">
-      <div class="card">
-        <img src="/img/prefect.png" alt="Prefect badge logo" class="badge">
-        <h5>Prefects:</h5>
-        <p>The user must be able to make any student a prefect, and also revoke the prefect-status at any time. However,
-          there can't be more than two prefects from each house. Therefore, the user must choos which student to remove
-          from the list in order to be able to appoint the new one as Prefect.
-        </p>
-      </div>
-      <img src="/img/hogwarts-prefect.svg" alt="">
 
-      <div class="card">
-        <img src="/img/inqSquad.png" alt="Prefect badge logo" class="badge">
-        <h5>Inq. Squad:</h5>
-        <p>The user must be able to appoint students to the inquisitorial squad, and remove them again. Any number of
-          students can be appointed, but only pure-blood or students from Slytherin (should any non-pure-blood be in
-          that house).
-        </p>
-        <img src="/img/hogwarts-inq.png" alt="Inquisitorial Squad js code" class="mob-none">
-        <img src="/img/hogwarts-inq-mobile.png" alt="Inquisitorial Squad js code" class="d-none">
-      </div>
-      <div class="card">
-        <div class="flex">
-          <img src="/img/muggle.png" alt="Prefect badge logo" class="badge">
-          <img src="/img/half-blood.png" alt="Prefect badge logo" class="badge">
-          <img src="/img/pure-blood.png" alt="Prefect badge logo" class="badge">
-        </div>
-        <h5>Blood Status:</h5>
-        <p>This is an indication of whether the student is from a pure wizarding family, or from a half-wizard,
-          half-muggle family, or just plain muggle.
-          There is a list of all known pure-blooded wizarding families and a list of the known
-          half-bloods.
-
-        </p>
-        <img src="/img/hogwars-bloodJS.png" alt="Blood status js code" class="mob-none">
-        <img src="/img/hogwarts-bloodJS-mobile.png" alt="Blood status js code" class="d-none">
-
-      </div>
-
+    <h3>And some more User Stories</h3>
+    <div class="uxStories">
+      <p class="ux">As I user I want to be able to make <span>parameter changes</span> so I can see how that affects my
+        score.</p>
+      <p class="ux">As I user I want to be able to have a unique URL so I can <span>share my result</span> with a
+        colleague.</p>
     </div>
+    <img src="/img/co2-opportunities.png" alt="Prefect badge logo">
+    <div class="two-col">
+      <p>In this case, the data was fake but </p>
+    </div>
+
+
+
+
 
 
 
@@ -190,11 +171,11 @@
       </p>
       <p></p>
     </div>
+    <p>Pansy Parkinson is originally Pure-Blood</p>
     <video controls width="100%">
       <source src="/img/hogwarts-hacked.mp4" type="video/mp4">
       <img src="/img/hogwarts-hacked.gif" alt="Sorting the list through different attributes">
     </video>
-    <p>Pansy Parkinson is originally Pure-Blood</p>
     <p class="codepen" data-height="459" data-default-tab="js" data-slug-hash="dyJrPGJ" data-preview="true"
       data-user="paulafiaschi"
       style="height: 459px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">

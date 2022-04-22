@@ -472,10 +472,24 @@ nav li:hover::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3vw;
+  margin-top: 3rem;
 }
 
-.two-col div {
-  margin-top: 2rem;
+.uxStories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  .ux {
+    font-size: 1.35rem;
+    max-width: 50ch;
+
+    span {
+      font-weight: 600;
+    }
+  }
 }
 
 .one-col {
@@ -489,6 +503,7 @@ nav li:hover::after {
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .prev-proj {
